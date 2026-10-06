@@ -1,4 +1,9 @@
-DECLARE
+BEGIN
+    FOR i IN 1..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(i);
+    END LOOP;
+END;
+/
     marks NUMBER := 45;
 BEGIN
     IF marks >= 40 THEN
